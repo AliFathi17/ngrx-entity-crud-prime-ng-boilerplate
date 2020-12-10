@@ -15,7 +15,7 @@ export const initialState: State = {
   items: [
     {
       label: 'Login',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-check-square',
       // @ts-ignore
       roles: ['roleA'],
       command: (event$) => {
@@ -32,7 +32,7 @@ export const initialState: State = {
     },
     {
       label: 'Counter',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-clock',
       // @ts-ignore
       roles: ['roleB'],
       command: (event$) => {
@@ -49,7 +49,7 @@ export const initialState: State = {
     },
     {
       label: 'Coin',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-wallet',
       // @ts-ignore
       roles: ['roleA', 'roleB'],
       command: (event$) => {
@@ -83,7 +83,7 @@ export const initialState: State = {
     },
     {
       label: 'Car',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-shopping-cart',
       // @ts-ignore
       roles: ['roleA'],
       command: (event$) => {
@@ -100,7 +100,7 @@ export const initialState: State = {
     },
     {
       label: 'Structure',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-sitemap',
       // @ts-ignore
       roles: ['roleA'],
       command: (event$) => {
