@@ -35,8 +35,36 @@
 
 
   <ng-template pTemplate="footer">
-    <button pButton class="p-button-success mr-1" label="save" (click)="submit(form.getRawValue())"></button>
+    <button pButton class="p-button-success mr-1" [disabled]="!form.valid" label="save" (click)="submit(form.getRawValue())"></button>
     <button pButton type="button" label="Cancel" (click)="cancel()"></button>
   </ng-template>
 
 </p-dialog>
+
+<form
+  class="dynamic-form"
+  [formGroup]="form">
+
+  <div class="p-grid">
+    <div class="p-col">
+      <label for="id"><strong>id</strong></label><br>
+      <input id="id" name="id" type="text" class="form-control" pInputText [formControl]="id"/>
+    </div>
+  </div>
+
+  <div class="p-grid">
+    <div class="p-col">
+      <label for="name"><strong>name</strong></label><br>
+      <input id="name" name="name" type="text" class="form-control" pInputText [formControl]="name"/>
+      <app-form-error-msg [fc]="name"></app-form-error-msg>  <!-- componente da aggiungere -->
+    </div>
+  </div>
+
+  <div class="p-grid">
+    <div class="p-col">
+      <label for="value"><strong>value</strong></label><br>
+      <input id="value" name="value" type="text" class="form-control" pInputText [formControl]="value"/>
+    </div>
+  </div>
+
+</form>

@@ -16,6 +16,7 @@ export class JsonFormPipe implements PipeTransform {
       touched: value.touched,
       valid: value.valid,
     };
+    // tslint:disable-next-line:forin
     for (const key  in value.controls) {
       const val = {};
       val[key] = value.controls[key].errors;

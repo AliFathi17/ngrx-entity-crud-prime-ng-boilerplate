@@ -24,10 +24,12 @@ export class ButtonNewCoinComponent implements OnInit {
   constructor(private readonly store$: Store<RootStoreState.State>) {
   }
 
+  // tslint:disable-next-line:typedef
   ngOnInit() {
     this.disabled$ = of(false);
   }
 
+  // tslint:disable-next-line:typedef
   onCreate() {
     const item: Coin = new Coin();
 

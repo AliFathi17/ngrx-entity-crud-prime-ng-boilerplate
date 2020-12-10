@@ -16,6 +16,7 @@ export class CoinMainComponent implements OnInit {
 
   actions: Actions<Coin> = CoinStoreActions.actions;
 
+  // tslint:disable-next-line:typedef
   ngOnInit() {
   }
 }
